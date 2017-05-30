@@ -1,6 +1,6 @@
 #!groovy
 
-print 'Starting...'
+echo 'Starting...'
 
 pipeline {
     agent any
@@ -8,17 +8,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                print 'Building..'
+                echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                print 'Testing..'
+                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                print 'Deploying....'
+                echo 'Deploying....'
             }
         }
     }
